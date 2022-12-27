@@ -1,0 +1,142 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0 !important;
+}
+li{
+    list-style: none;
+}
+li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 52px;
+}
+.fa-arrow-right {
+    margin-left: 1rem;
+}
+.fa-star {
+    color: #FFDB1D;
+}
+.para {
+    font-size: 15px;
+    line-height: 30px;
+}
+.lg {
+    background: linear-gradient(to right, rgba(119, 183, 30, 1), rgba(200, 229, 34, 1));
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+}
+.lg:hover {
+    opacity: 1;
+}
+.lg-bottom {
+    background: linear-gradient(to top, rgba(119, 183, 30, 1), rgba(200, 229, 34, 1));
+}
+
+
+.fs {
+    font-size: 40px;
+}
+.fs-1 {
+    font-size: clamp(18px, 18px + .5vw, 25px);
+}
+
+.margin-top {
+    margin-top: 7rem;
+}
+.sec6 {
+    margin-top: 16rem;
+}
+.bg-g {
+    position: relative;
+    width: fit-content;
+    padding: 5px 25px;
+    background-color: cadetblue;
+}
+
+.card-footer {
+    background-color: #fff !important;
+}
+header, header nav {
+    min-height: 10vh;
+}
+
+main{
+    min-height: 85vh;
+}
+
+.main-h {
+    min-height: 85vh;
+}
+
+.bg-img {
+    min-height: 85vh;
+    background-image: url(/images/landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #6a6868;
+    background-blend-mode: multiply;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.04);
+    margin-inline: auto;
+}
+
+
+.shrink img {
+    transition: 1s ease;
+    }
+    
+    .shrink img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    cursor: pointer;
+    }
+
+.sign-up {
+    height: 40vh;
+    overflow: hidden;
+    padding: 6rem;
+}
+
+footer, footer .container {
+    min-height: 40vh;
+}
+footer .container > * {
+    min-height: 40vh;
+    padding: 80px 0;
+}
+
+@media (min-width: 900px) {
+    .mr-l {
+        margin-right: 6rem !important;
+    }
+}

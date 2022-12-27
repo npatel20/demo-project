@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Demo Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <!-- <link rel="stylesheet" href="/css/main.min.css" /> -->
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link href="/css/main.min.css" rel="stylesheet" /> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid bg-primary">
+      <p class="text-center fw-bold text-capitalize p-3 text-light m-0">
+        sign up for emails to receive additional offers!
+      </p>
+    </div>
+    <header>
+      <!-- place navbar here -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- left -->
+          <div
+            class="collapse navbar-collapse order-lg-1 order-3 navigation-menu"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shop By Category</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shipping & Returns</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Terms of Service</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Return Policy</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Mission
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Our Story</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand order-1" href="#">
+            <img src="/images/logo.png" alt="logo" width="200px" />
+          </a>
+          <button
+            class="navbar-toggler order-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".navigation-menu"
+            aria-controls="navigation-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- right -->
+          <div
+            class="collapse navbar-collapse order-lg-3 order-4 navigation-menu"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li>
+                <img class="me-3" src="/images/search.svg" alt="search icon" />
+              </li>
+              <li>
+                <img class="me-3" src="/images/person.svg" alt="person icon" />
+              </li>
+              <li>
+                <img class="me-3" src="/images/cart.svg" alt="cart icon" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-fluid bg-img overlay text-right">
+        <div class="container">
+          <div
+            class="main-h mr-l row justify-content-center align-items-center float-end"
+          >
+            <div
+              class="col"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <h1 class="fw-bold text-white">Good natured goods</h1>
+              <p class="text-capitalize text-white">
+                We do not inherit the Earth from our ancestors, we <br />
+                borrow it from our children
+              </p>
+              <a class="text-capitalize btn lg border-0 rounded-0" href="#"
+                >shop now <span><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- section 2 -->
+    <section class="container-fluid position-relative margin-top">
+      <picture>
+        <img
+          src="/images/leaf-left.png"
+          alt=""
+          class="position-absolute top-0 start-0"
+        />
+      </picture>
+      <picture>
+        <img
+          src="/images/leaf-right.png"
+          alt=""
+          class="position-absolute top-0 end-0"
+        />
+      </picture>
+      <div class="container">
+        <div class="row">
+          <div class="mb-3 col-md-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <picture>
+                <img
+                  class="img-fluid"
+                  src="/images/who-are-we.png"
+                  alt="tree sapling"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              <h2 class="fs fw-bold text-capitalize mb-2">who we are</h2>
+              <p class="fs-1 lead text-capitalize mb-2">
+                We’re using nature’s most sustainable resources to create better
+                products for us and for the planet.
+              </p>
+              <p class="para text-capitalize mb-2">
+                Our brand was founded with this as a guiding principle. We don’t
+                think it’s right to just pass the earth along from generation to
+                generation. We think it’s time we started saving it for all the
+                generations to come.
+              </p>
+              <p class="para text-capitalize">
+                Our founders, Arvind Ganesan and Rahul Singh, formerly at
+                Wayfair, are combining their deep knowledge of home goods, with
+                their passion for sustainability, to transform the products we
+                use every day. While EcoSoul was founded in Boston, we've now
+                expanded our operations across the globe, with our supply chain
+                spanning across India, China and Vietnam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+
+    <!-- section 3 - cards -->
+    <section class="container mt-5 mb-5">
+      <div
+        class="d-flex justify-content-between mb-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <h3 class="text-uppercase">best seller</h3>
+        <a
+          href="#"
+          class="btn btn-primary lg text-capitalize border-0 rounded-0"
+          >view more <span><i class="fa-solid fa-arrow-right"></i></span
+        ></a>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col col-lg-3">
+          <div
+            class="shrink card h-100 border-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <figure>
+              <img
+                src="/images/palm-leaf-plate.png"
+                class="card-img-top"
+                alt="Palm Leaf Plates"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <h4 class="card-title fw-light mt-2">
+                Palm Leaf Plates | 10” Square
+              </h4>
+              <p class="card-text fw-bold">from $31.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3">
+          <div
+            class="shrink card h-100 border-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <img
+              src="/images/bamboo-cutting.png"
+              class="card-img-top"
+              alt="Bamboo Cutting Boards"
+            />
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <h5 class="card-title fw-light mt-2">
+                USDA Certified Bamboo Cutting <br />
+                Boards – Set of 3
+              </h5>
+              <p class="card-text fw-bold">from $24.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3">
+          <div
+            class="card shrink h-100 border-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <img
+              src="/images/party-pack.png"
+              class="card-img-top"
+              alt="Plates and Spoons"
+            />
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <h5 class="card-title fw-light mt-2">
+                Casual Party Pack (for 50 guests)
+              </h5>
+              <p class="card-text fw-bold">from $59.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3">
+          <div
+            class="shrink card h-100 border-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <img
+              src="/images/palm-leaf-bowls.png"
+              class="card-img-top"
+              alt="Palm Leaf Bowls"
+            />
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <h5 class="card-title fw-light mt-2">
+                Palm Leaf Bowls, 6” 16oz | 20 count
+              </h5>
+              <p class="card-text fw-bold">from $15.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 - cards -->
+
+    <!-- section 4 impact -->
+    <section class="container mt-5 mb-5">
+      <h3
+        class="text-uppercase text-center mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        impact
+      </h3>
+      <p
+        class="fw-light text-center w-75 mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="300"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        Because nature is the most powerful presence on the planet, we’re here
+        to harness it into everyday products that work. Products made from
+        plants and returned back to the earth after use.
+      </p>
+
+      <div
+        class="d-flex flex-row flex-wrap justify-content-center justify-content-md-between mt-5 align-items-center"
+      >
+        <div
+          class="shrink d-flex flex-column mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <figure>
+            <picture
+              ><img src="/images/sugarcane.png" alt="sugarcane"
+            /></picture>
+            <figcaption class="text-center text-capitalize fw-bold mt-2">
+              sugarcane
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="shrink d-flex flex-column mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <figure>
+            <picture><img src="/images/corn.png" alt="corn" /></picture>
+            <figcaption class="text-center text-capitalize fw-bold mt-2">
+              corn
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="shrink d-flex flex-column mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <figure>
+            <picture
+              ><img src="/images/palm-leaves.png" alt="palm leaves"
+            /></picture>
+            <figcaption class="text-center text-capitalize fw-bold mt-2">
+              palm leaves
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="shrink d-flex flex-column mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <figure>
+            <picture><img src="/images/bamboo.png" alt="bamboo" /></picture>
+            <figcaption class="text-center text-capitalize fw-bold mt-2">
+              bamboo
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 impact -->
+
+    <!-- section 5 -->
+    <div class="container-fluid margin-top mb-5 position-relative sec5">
+      <picture>
+        <img
+          class="position-absolute top-0 start-0"
+          src="/images/leaf-left.png"
+          alt=""
+        />
+      </picture>
+      <picture>
+        <img
+          class="position-absolute top-0 end-0"
+          src="/images/leaf-right.png"
+          alt=""
+        />
+      </picture>
+      <div class="container">
+        <div class="row g-5">
+          <div
+            class="col col-lg-3 position-relative"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="circle position-relative">
+              <picture>
+                <img
+                  class="position-absolute top-50 start-50 translate-middle"
+                  src="/images/made-with-plants.svg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <p
+              class="position-absolute text-center mt-4 top-100 start-50 translate-middle fw-bold text-capitalize"
+            >
+              made with plants
+            </p>
+          </div>
+
+          <div
+            class="col col-lg-3 position-relative"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="circle position-relative">
+              <picture>
+                <img
+                  class="position-absolute top-50 start-50 translate-middle"
+                  src="/images/non-toxic.svg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <p
+              class="position-absolute text-center mt-4 top-100 start-50 translate-middle fw-bold text-capitalize"
+            >
+              non-toxic
+            </p>
+          </div>
+          <div
+            class="col col-lg-3 position-relative"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="circle position-relative">
+              <picture>
+                <img
+                  class="position-absolute top-50 start-50 translate-middle"
+                  src="/images/compostable.svg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <p
+              class="position-absolute text-center mt-4 top-100 start-50 translate-middle fw-bold text-capitalize"
+            >
+              compostable
+            </p>
+          </div>
+          <div
+            class="col col-lg-3 position-relative"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="circle position-relative">
+              <picture>
+                <img
+                  class="position-absolute top-50 start-50 translate-middle"
+                  src="/images/certified.svg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <p
+              class="position-absolute text-center mt-4 top-100 start-50 translate-middle fw-bold text-capitalize"
+            >
+              certified
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 5 -->
+
+    <!-- section 6 img grid -->
+    <section class="container-fluid sec6">
+      <!-- Gallery -->
+      <div class="row">
+        <div
+          class="shrink col-lg-4 col-md-12 mb-4 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img
+            src="/images/jar-board.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Storage Jar and Cutting Board on a Platform"
+          />
+
+          <img
+            src="/images/avocado-toast.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Avocado Toast"
+          />
+        </div>
+
+        <div
+          class="shrink col-lg-4 mb-4 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img
+            src="/images/breakfast.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="People having Breakfast"
+          />
+
+          <img
+            src="/images/table.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Plates on a Lunch Table"
+          />
+        </div>
+
+        <div
+          class="shrink col-lg-4 mb-4 mb-lg-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          <img
+            src="/images/plates-spoons.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="Palm Leaf Plates and Spoons"
+          />
+
+          <img
+            src="/images/bin.png"
+            class="w-100 shadow-1-strong rounded mb-4"
+            alt="A Woman collecting trash bag from trash bin"
+          />
+        </div>
+      </div>
+      <!-- Gallery -->
+    </section>
+    <!-- section 6 img grid -->
+
+    <!-- section 7 testimonials -->
+    <section class="container margin-top">
+      <h3
+        class="fw-bold text-uppercase text-center mb-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="1400"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        what customer say about us
+      </h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div
+            class="card h-100"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="2300"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <p class="card-text mt-3">
+                Your products are a breath of fresh air. When buying
+                eco-friendly, one might think you have to compromise on quality.
+                But that's not the case with ECO SOUL products.
+              </p>
+            </div>
+            <div class="card-footer border-0 mx-auto">
+              <p class="lg text-capitalize text-center fw-bold bg-g">
+                19 july 2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="2300"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <p class="card-text mt-3">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                galley.
+              </p>
+            </div>
+            <div class="card-footer border-0 mx-auto">
+              <p class="lg text-capitalize text-center fw-bold bg-g">
+                20 january 2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card h-100"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="2300"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+          >
+            <div class="card-body text-center">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <p class="card-text mt-3">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable.
+              </p>
+            </div>
+            <div class="card-footer border-0 mx-auto">
+              <p class="lg text-capitalize text-center fw-bold bg-g">
+                25 may 2022
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 7 testimonials -->
+
+    <!-- section 8 sign-up -->
+    <div
+      class="lg-bottom fluid-container position-relative margin-top bg-light"
+    >
+      <picture
+        ><img
+          class="position-absolute top-0 start-0"
+          src="/images/leaf-left.png"
+          alt="leaf"
+      /></picture>
+      <picture
+        ><img
+          class="position-absolute top-0 end-0"
+          src="/images/leaf-right.png"
+          alt="leaf"
+      /></picture>
+      <div
+        class="container col col-lg-6 mx-auto row align-items-center sign-up"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="2400"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <h4 class="fw-bold text-uppercase text-center">
+          sign up for email and get 10% off
+        </h4>
+        <p class="text-center text-capitalize">
+          Be the first to know about new products, sustainability tips and more!
+        </p>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control rounded-0"
+            placeholder="Enter Email Here"
+            aria-label="Enter Email Here"
+            aria-describedby="basic-addon"
+          />
+          <span
+            class="input-group-text text-capitalize lg border-0 rounded-0"
+            id="basic-addon"
+            >subscribe <span><i class="fa-solid fa fa-arrow-right"></i></span
+          ></span>
+        </div>
+      </div>
+    </div>
+    <!-- section 8 sign-up -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between align-items-start">
+          <div class="col-md-6 col-lg-3">
+            <picture><img src="/images/logo.png" alt="company logo" /></picture>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-bold text-uppercase">shop</h5>
+            <ul>
+              <li>
+                <a href="#" class="text-capitalize">my account</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">shop by category</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">shipping & returns</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">terms of service</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">refund policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-bold text-uppercase">company</h5>
+            <ul>
+              <li>
+                <a href="#" class="text-capitalize">our story</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">impact</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">sustainable living blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">join our team</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-bold text-uppercase">quick links</h5>
+            <ul>
+              <li>
+                <a href="#" class="text-capitalize">contact us</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">privacy policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">terms & conditions</a>
+              </li>
+              <li>
+                <a href="#" class="text-capitalize">careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-bold text-uppercase">follow us</h5>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="container-fluid bg-primary">
+      <p class="text-center fw-bold p-3 text-light m-0">
+        © 2022, EcoSoul Home Powered by Shopify
+      </p>
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
