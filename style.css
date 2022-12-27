@@ -74,6 +74,9 @@ h1 {
     background-color: cadetblue;
 }
 
+.note-bg {
+    background-color: #77B61D;
+}
 .card-footer {
     background-color: #fff !important;
 }
